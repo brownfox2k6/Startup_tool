@@ -8,7 +8,7 @@ init(wrap=True)
 print("\033[96mEnter full path of source file:\033[0m")
 file_path = input()
 print("\033[96mEnter name of bat file:\033[0m")
-bat_name = input()
+bat_name = input() + ".bat"
 
 bat_path = f"C:/Users/{getuser()}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 with open(join(bat_path, bat_name), "w+") as bat_file:
